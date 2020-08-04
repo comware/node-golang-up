@@ -1,9 +1,8 @@
-FROM mhart/alpine-node:14
+FROM golang:1.14
 
 RUN \
-  apk update && \
-  apk add curl && \
-  apk add git make musl-dev go && \
+  apt-get update -y && \
+  apt-get install nodejs npm -y && \
   curl -sf https://up.apex.sh/install | BINDIR=/usr/local/bin sh
 
 RUN \
