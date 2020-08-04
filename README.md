@@ -1,8 +1,8 @@
 # node-golang-up
 
-An image for CI that includes
-
 ![build](https://github.com/comware/node-golang-up/workflows/build/badge.svg)
+
+An image for CI that includes
 
 1. [node](https://nodejs.org/en/) 
 1. [golang](https://golang.org/)
