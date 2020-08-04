@@ -6,4 +6,7 @@ RUN \
   apk add git make musl-dev go && \
   curl -sf https://up.apex.sh/install | BINDIR=/usr/local/bin sh
 
-RUN up upgrade
+RUN \
+  up upgrade && \
+  up version
+
